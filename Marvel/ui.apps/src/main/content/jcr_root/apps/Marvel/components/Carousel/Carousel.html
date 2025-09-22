@@ -1,0 +1,12 @@
+<sly data-sly-use.model="com.Marvel.core.models.CarouselDemo"/>
+<div>
+    <ul data-sly-list.item="${model.multifield1}">
+    <li>
+        <h1>textfield:${item.text}</h1>
+        <p>pathfield:${item.pathfield}</p>
+        <ul data-sly-list.item1="${item.multifield}">
+            <li>text:${item1.textfield}</li>
+        </ul>
+       </li>
+    </ul>
+</div>

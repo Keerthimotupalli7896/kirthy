@@ -1,0 +1,11 @@
+<sly data-sly-use.model="com.Marvel.core.models.TestModel">
+    <div>
+    <h1>Text:${model.text}</h1>
+    <h2>${model.check}</h2>
+    <h2>${model.select}</h2>
+
+    </div>
+   <div>
+        <p>File Upload:</p>
+        <img src="${model.file  @ context='uri'}" alt="Uploaded Image" />
+    </div>

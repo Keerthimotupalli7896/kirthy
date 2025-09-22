@@ -1,0 +1,14 @@
+<sly data-sly-use.model="com.Marvel.core.models.HeaderModel"/>
+<div>
+    <h1>Text:${model.textfield}</h1>
+    <p>Checkbox: ${model.checkbox ? 'Checked' : 'Unchecked'}</p>
+    <img src="${model.pathfield}" alt="Header Image" />
+    <ul data-sly-list="${model.multifield}">
+        <li> Title:${item.text}</li>
+        <li>Date: ${item.datepicker}</li>
+     </ul>
+</div>
+
+
+
+
