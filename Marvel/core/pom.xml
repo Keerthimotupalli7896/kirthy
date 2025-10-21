@@ -43,8 +43,13 @@
                         </goals>
                         <configuration>
                             <bnd><![CDATA[
-Import-Package: javax.annotation;version=0.0.0,*
-                                ]]></bnd>
+Import-Package: \
+    !jdk.*, \
+    !sun.*, \
+    javax.annotation;version=0.0.0, \
+    *
+]]></bnd>
+
                         </configuration>
                     </execution>
                 </executions>

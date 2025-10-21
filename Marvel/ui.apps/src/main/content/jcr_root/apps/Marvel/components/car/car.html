@@ -1,0 +1,12 @@
+<sly data-sly-use.model="com.Marvel.core.models.Car"/>
+
+    <h3>${model.richtext @context='html'}</h3>
+
+ <div data-sly-list.item="${model.multifield}">  
+
+
+    <a href="${item.Path}">
+               <img src="${item.Image}" alt="Image"/> 
+                ${item.richtext @ context='html'}
+      </a>
+</div>
